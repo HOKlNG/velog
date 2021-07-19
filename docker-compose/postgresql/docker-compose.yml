@@ -1,0 +1,13 @@
+version: '3'
+services:
+  postgres:
+    image: postgres
+    container_name: postgres_dev
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: '12341234'
+      TZ: "Asia/Seoul"
+    ports:
+      - '5432:5432'
+    volumes:
+      - /mnt/c/User/ghtjd/Documents/velog:/var/lib/postgresql/
